@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Misa ♡ Bờm — 07.10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loading"><div class="loader">♡</div><p>một món quà nhỏ đang được chuẩn bị...</p></div>
+<div class="paper-noise"></div>
+<div class="decor decor-1">✿</div><div class="decor decor-2">♡</div><div class="decor decor-3">✦</div>
+<div id="floaters"></div>
+<button class="music" id="musicBtn" aria-label="Bật hoặc tắt nhạc">♫</button>
+<audio id="music" loop><source src="music/birthday.mp3" type="audio/mpeg"></audio>
+
+<main>
+<!-- 1 · TRANG ĐẦU -->
+<section class="page active" id="p1">
+  <div class="scrapbook-frame hero-frame-new">
+
+    <!-- Trang trí -->
+    <div class="tape tape-photo-left"></div>
+    <div class="tape tape-photo-right"></div>
+
+    <div class="date-label">07 · 10 · 2026</div>
+
+    <div class="sticker hero-heart">♡</div>
+    <div class="sticker hero-heart-2">♡</div>
+    <div class="sticker hero-sparkle">✦</div>
+    <div class="sticker hero-flower">✿</div>
+
+    <!-- Tiêu đề -->
+    <p class="eyebrow">MISA'S LITTLE BIRTHDAY GIFT</p>
+
+    <h1 class="hero-title-new">
+      Hi <span>ông chã húi</span>,<br>
+      bất ngờ chưa<br>
+      hjhj?
+    </h1>
+
+    <p class="hero-from">
+      from<br>
+      <b>Misa dễ thương™</b>
+      to
+      <b>Bờm iu dấu™</b>
+    </p>
+<!-- ẢNH TRÁI -->
+<div class="photo-polaroid photo-left">
+  <div class="photo-placeholder">
+    <img src="images/anh-trai.jpg" alt="Ảnh của tụi mình">
+  </div>
+  <p>Cùng nhau, mãi nhé ♡</p>
+</div>
+
+<!-- ẢNH PHẢI TRÊN -->
+<div class="photo-polaroid photo-right-top">
+  <div class="photo-placeholder">
+    <img src="images/anh-phai-1.jpg" alt="Ảnh của tụi mình">
+  </div>
+  <p>Anh và em ♡</p>
+</div>
+
+<!-- ẢNH PHẢI DƯỚI -->
+<div class="photo-polaroid photo-right-bottom">
+  <div class="photo-placeholder">
+    <img src="images/anh-phai-2.jpg" alt="Ảnh sinh nhật của anh">
+  </div>
+  <p>Sinh nhật của anh ♡</p>
+</div>
+
+    <!-- HỘP QUÀ -->
+    <div class="present-new" id="present"
+         role="button"
+         tabindex="0"
+         aria-label="Mở hộp quà đii">
+
+      <div class="present-ribbon"></div>
+      <div class="present-bow">
+        <i></i>
+        <i></i>
+      </div>
+
+      <div class="present-box">
+        <div class="present-heart">♡</div>
+      </div>
+
+      <div class="present-tag">For Bờm ♡</div>
+    </div>
+
+    <button class="pink-btn hero-open-btn" id="open">
+      MỞ QUÀ ĐI ÔNG CHÃ HÚI →
+    </button>
+
+    <small class="hero-warning">
+      warning: có thể gặp nhiều thứ đáng yêu ngoài dự kiến
+    </small>
+
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="page" id="p2">
+  <div class="scrapbook-frame game-frame">
+    <div class="tape tape-c"></div>
+    <p class="eyebrow">CHAPTER 01 · A LITTLE GAME</p>
+    <h2>Mảnh ghép <em>tình iu</em> 🧩</h2>
+    <p class="sub">“Sến zữ trừi ưii”<br><span>ez game ắk</span></p>
+    <div class="puzzle-area">
+      <div class="puzzle-board" id="puzzleBoard" aria-label="Bảng ghép ảnh"></div>
+    </div>
+    <div class="game-status" id="gameStatus">Mẹo: bấm 2 mảnh để đổi chỗ · 6 mảnh thôi, ez hăm 😌</div>
+    <div class="success" id="success"><span>🥹❤️</span><strong>ĐÚNG RỒI ÔNG CHÃ HÚI!</strong><small>Tadaaaaa!</small></div>
+    <button class="next hidden" id="toAlbum"> next đi ông chã húi →</button>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="page" id="p3">
+  <div class="scrapbook-frame album-frame">
+    <div class="tape tape-d"></div><div class="tape tape-e"></div>
+    <p class="eyebrow">CHAPTER 02 · BIRTHDAY THROUGH THE YEARS</p>
+    <h2>Nhìn tụi mình thấy dễ thương<em>hen</em> 🎂</h2>
+    <p class="sub">em biết lần nào anh cũng ước năm sau lại đón sinh nhật chung với em hết á hjhj</p>
+    <div class="film-shell">
+      <div class="film-holes top-holes" aria-hidden="true"></div>
+      <div class="film-track" id="filmTrack">
+        <article class="film-frame" data-year="2023">
+          <div class="film-label">07 · 10 · 2023</div>
+          <div class="film-photo"><img src="images/birthday-2023.jpg" alt="Ảnh sinh nhật của Bờm năm 2023" onerror="this.src='images/photo-placeholder.svg'" /></div>
+          <div class="film-caption">“năm đầu tiên trong cuộn phim sinh nhật của Bờm ♡”</div>
+        </article>
+        <article class="film-frame" data-year="2024">
+          <div class="film-label">07 · 10 · 2024</div>
+          <div class="film-photo"><img src="images/birthday-2024.jpg" alt="Ảnh sinh nhật của Bờm năm 2024" onerror="this.src='images/photo-placeholder.svg'" /></div>
+          <div class="film-caption">“héppi birthday”</div>
+        </article>
+        <article class="film-frame" data-year="2025">
+          <div class="film-label">07 · 10 · 2025</div>
+          <div class="film-photo"><img src="images/birthday-2025.jpg" alt="Ảnh sinh nhật của Bờm năm 2025" onerror="this.src='images/photo-placeholder.svg'" /></div>
+          <div class="film-caption">“hjhj điều ước năm 2024 đã thành hiện thực”</div>
+        </article>
+        <article class="film-frame film-frame-double" data-year="2026">
+          <div class="film-label">07 · 10 · 2026 · 2 MOMENTS</div>
+          <div class="film-double-photos">
+            <div class="film-photo film-photo-half"><img src="images/birthday-2026.jpg" alt="Ảnh sinh nhật của Bờm năm 2026 - ảnh 1" onerror="this.src='images/photo-placeholder.svg'" /></div>
+            <div class="film-photo film-photo-half"><img src="images/birthday-2026-2.jpg" alt="Ảnh sinh nhật của Bờm năm 2026 - ảnh 2" onerror="this.src='images/photo-placeholder.svg'" /></div>
+          </div>
+          <div class="film-caption">“năm nay được hẳn 2 lần luôn nhenn ♡”</div>
+        </article>
+      </div>
+      <div class="film-holes bottom-holes" aria-hidden="true"></div>
+    </div>
+    <div class="film-controls">
+      <button class="album-arrow" id="prevYear" aria-label="Năm trước">‹</button>
+      <div class="album-dots" id="albumDots"></div>
+      <button class="album-arrow" id="nextYear" aria-label="Năm sau">›</button>
+    </div>
+    <p class="replace-note">Thay ảnh trong thư mục <b>images/</b>: 2023, 2024, 2025 và <b>2 ảnh cho năm 2026</b> (<code>birthday-2026.jpg</code> + <code>birthday-2026-2.jpg</code>).</p>
+    <button class="next" data-go="5">tiếp tục →</button>
+  </div>
+</section>
+
+
+<!-- 4 -->
+<section class="page" id="p5">
+  <div class="scrapbook-frame gift-frame gift-choice-frame">
+    <div class="tape tape-f"></div>
+    <div class="tiny-sparkle">✦</div>
+    <p class="eyebrow">CHAPTER 04 · PICK THE GIFT</p>
+    <h2>Bấm vào <em>quà của em đi</em> 🎁</h2>
+    <p class="sub">Món quà đặc biệt:<br> Hy vọng Khanh sẽ thích (bắt buộc phải thích)<b></b></p>
+
+    <button class="gift-card hero-gift" id="blowGift" type="button">
+      <div class="gift-ribbon"></div>
+      <div class="gift-box-visual"><span></span></div>
+      <strong>BLOW THE CANDLES</strong>
+      <small>mở món quà này để tới chiếc bánh 🎂</small>
+      <div class="gift-open-label">MỞ QUÀ →</div>
+    </button>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="page cake-page" id="p7">
+  <div class="cake-scene">
+    <div class="cake-tape tape-cake-a"></div>
+    <div class="cake-tape tape-cake-b"></div>
+    <div class="sky-sparkle s1">✦</div><div class="sky-sparkle s2">✧</div><div class="sky-sparkle s3">♡</div>
+    <div class="balloon-field" id="balloonField" aria-hidden="true"></div>
+    <div class="cake-card">
+      <div class="cake-top-note">07 · 10 · 2026</div>
+      <p class="eyebrow">CHAPTER 05 · BLOW OUT THE CANDLES</p>
+      <h2>Thổi nến cho <em>Bờm</em> 🎂</h2>
+      <p class="sub">Hôm nay chiếc bánh này là của Bờm.<br>Hít một hơi thật sâu rồi <b>phùuuuu</b> vào mic nhé.</p>
+
+      <div class="cake-stage photo-cake-stage" id="cakeStage">
+        <div class="cake-shadow"></div>
+        <div class="cake-photo-wrap">
+          <img class="cake-photo" src="images/bom-cake.jpg" alt="Bánh sinh nhật của Bờm">
+          <div class="photo-candle photo-candle-a"><span class="photo-wick"></span><i class="photo-flame"></i></div>
+          <div class="photo-candle photo-candle-b"><span class="photo-wick"></span><i class="photo-flame"></i></div>
+          <div class="photo-candle photo-candle-c"><span class="photo-wick"></span><i class="photo-flame"></i></div>
+        </div>
+      </div>
+
+      <div class="blow-status" id="blowStatus">Bấm “Bật mic” rồi thổi nhẹ vào microphone 💨</div>
+      <div class="blow-controls">
+        <button class="pink-btn mini" id="startBlow">🎙️ BẬT MIC & THỔI</button>
+        <button class="soft-btn" id="tapBlow">💨 Thổi bằng nút này</button>
+      </div>
+      <div class="wish-reveal hidden" id="wishReveal">
+        <strong>PHÙUUUU! 🎉</strong>
+        <span>Nến tắt rồi! Ước một điều thật đẹp nha Bờm.</span>
+      </div>
+      <button class="next hidden" id="toLetter" data-go="8">mở lá thư Misa để lại →</button>
+    </div>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="page" id="p8">
+  <div class="scrapbook-frame letter-frame">
+
+    <div class="tape tape-g"></div>
+
+    <p class="eyebrow">CHAPTER 06 · SECRET LETTER</p>
+
+    <h2>
+      Secret <em>hôm nay</em><br>
+      đây rồi!!!
+    </h2>
+
+    <div
+      class="letter-wrap"
+      id="letter"
+      role="button"
+      tabindex="0"
+      aria-label="Mở lá thư"
+    >
+
+      <!-- NỘI DUNG LÁ THƯ -->
+      <div class="letter">
+
+        <div class="letter-head">
+          Gửi Bờm iu dấu,
+        </div>
+
+        <p>
+          Chúc mừng sinh nhật của Khanh hjhj, nãy giờ chắc anh cũng bất ngờ
+          lém đúng hăm, mặc dù em làm hắn hơi xấu thiệc huhu...
+        </p>
+
+        <p>
+          Tuổi mới em mong anh đạt được nhiều mục tiêu mà anh vẫn đang làm
+          và mong anh chân cứng đá mềm, dù sao thì em vẫn luôn ở bên cạnh
+          support tinh thần anh hết mình hjhj.
+          <b>Với em,</b> năm nay là năm sinh nhật mà em không gửi đến anh
+          một món quà gì cả, em rất buồn vì điều đó, nhưng mà em biết anh
+          sẽ hiểu và thông cảm cho em.
+        </p>
+
+        <p>
+          Anh luôn ở bên và động viên em rất nhiều, nói thiệt hông có Khanh
+          chắc em hông có vực dậy tinh thần vậy đâu 🥹.
+          Anh luôn đồng hành cùng em vui có, buồn có, mỗi lần như vậy em đều
+          thấy may mắn vì dù sao ông trời cho mình lương duyên tốt lành như
+          zị á. Sến gke ắk trừi!!!
+        </p>
+
+        <p>
+          Từ hồi mới gặp nhau, rồi thích nhau, đến lúc anh tỏ tình em,
+          thì anh vẫn luôn nói là "anh sẽ cố gắng không để em thiếu cái gì",
+          đúng thiệc Khanh ơi, kiểu anh tới và làm cho mọi chuyện của em
+          hắn nhẹ nhàng đi hẳn luôn.
+        </p>
+
+        <p>
+          Em siêu biết ơn vì anh đã coi gia đình em như gia đình anh và anh
+          luôn giúp nhà em như anh là một thành viên của nhà em vậy.
+          Em mong cho năm sau và nhiều năm sau nữa, em sẽ được đồng hành
+          cùng anh zà anh mau thành công.
+        </p>
+
+        <p>
+          Lời cuối em mong anh sẽ hiểu được hjhj.
+        </p>
+
+        <p>
+          Je t’aime pour ce que tu es. J’espère que tout ira bien pour toi
+          et que tout se passera au mieux, parce qu’aujourd'hui, tu es à la
+          fois mon meilleur ami, mon amoureux et mon âme sœur indispensable.
+          Je tiens tellement à toi… Joyeux 21e anniversaire, mon cœur ❤️
+        </p>
+
+      </div>
+
+      <!-- CON DẤU -->
+      <div class="seal">
+        M<br>♡
+      </div>
+
+      <!-- PHONG THƯ -->
+      <div class="letter-cover">
+
+        <img
+          src="images/letter-envelope.png"
+          alt="Phong thư của Misa"
+          onerror="this.style.display='none'"
+        >
+
+        <small>
+          CLICK HERE TO OPEN
+        </small>
+
+      </div>
+
+    </div>
+
+    <!-- NÚT SANG TRANG CUỐI -->
+    <button
+      class="next"
+      id="letterNext"
+      data-go="9"
+    >
+      Sến quá hôngg hjhj →
+    </button>
+
+  </div>
+</section>
+
+
+<!-- 8 · TRANG CUỐI -->
+<section class="page final" id="p9">
+
+  <div class="scrapbook-frame final-frame">
+
+    <div class="confetti-paper c1">✦</div>
+    <div class="confetti-paper c2">♡</div>
+    <div class="confetti-paper c3">✿</div>
+
+    <div class="big-heart">
+      ♡
+    </div>
+
+    <p class="eyebrow">
+      Kết bài nhenn
+    </p>
+
+    <h2>
+      Happy Birthday,<br>
+      <em>Bờm iu dấu.</em> 🎂
+    </h2>
+
+    <p class="final-copy">
+      Hôm nay là ngày của anh.<br>
+      Chúc cho tuổi mới có thật nhiều điều vui và mong cho dự án sắp tới
+      của tụi mình cháy như ff nhoé,<br>
+      zà năm sau em sẽ hoành tránh hơn năm nay nhenn. Xin hứa!!!
+    </p>
+
+    <div class="duo">
+      Misa dễ thương <span>❤️</span> Bờm iu dấu
+    </div>
+
+    <div class="ending-stickers">
+      <span>02.03.2023</span>
+      <span>♡</span>
+      <span>em nhớ ngày anni nè Khanh hjhj</span>
+    </div>
+
+    <p class="joke">
+      “ông chã húi” — “bà chã hơm”
+    </p>
+
+    <button class="next" id="again">
+      ↻ xem lại từ đầu nếu anh muốn
+    </button>
+
+  </div>
+
+</section>
+</main>
+
+<div class="bar"><span id="bar"></span></div>
+<script src="script.js"></script>
+</body>
+</html>
